@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+/* 
+// Estilos para el componente Perfil */
+
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

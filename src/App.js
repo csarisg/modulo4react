@@ -1,11 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+// rederisacion texto de bienvenida
+import Bienvenida from "./Bienvenida";
+// rederisacion descripcion perfil
+import Perfil from "./components/perfil";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        
+        <Bienvenida/>
+        <Perfil/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -23,3 +31,4 @@ function App() {
 }
 
 export default App;
+
