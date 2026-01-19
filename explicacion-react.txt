@@ -1,0 +1,32 @@
+<div id="root"></div>:
+
+¿Qué hace ese <div>?
+Ese <div> es el contenedor principal donde React va a mostrar toda la aplicación. Todo lo que vemos en pantalla se renderiza dentro de ese div.
+
+¿Por qué es importante para React?
+Porque React necesita un punto de entrada en el HTML para poder “montar” la aplicación. Sin ese div, React no sabría dónde insertar los componentes.
+
+¿Qué pasa si lo eliminás o cambiás su id?
+Si se elimina o se cambia el id, la aplicación no se va a mostrar y aparecerá un error en la consola, porque React no encontrará el elemento a renderizar.
+
+¿Dónde en el proyecto se usa ese id?
+Ese id (root) se usa en el archivo src/index.js, donde React lo busca para renderizar la aplicación.
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));:
+
+¿Qué hace ReactDOM.createRoot()?
+Crea la raíz de la aplicación React y la conecta con el elemento HTML que tiene el id root. Es el punto inicial donde React empieza a trabajar.
+
+
+root.render(<App />);:
+
+¿Qué significa root.render(<App />)?
+Significa que React va a mostrar el componente App dentro del div con id root. A partir de App, se renderizan todos los demás componentes hijos.
+
+¿Qué pasa si cambiás el componente que se renderiza por otro?
+React va a mostrar ese nuevo componente como principal. El componente que se renderice acá será el primero que aparece en pantalla.
+
+ej root.render(<Perfil />);:
+En ese caso, React ya no mostraría App, sino únicamente el componente Perfil y sus componentes internos.
