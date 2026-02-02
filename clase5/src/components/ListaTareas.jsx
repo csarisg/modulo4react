@@ -1,18 +1,14 @@
 function ListaTareas() {
   const tareas = [
-    { id: 1, titulo: "Estudiar React", completada: true },
-    { id: 2, titulo: "Hacer ejercicio", completada: false },
-    { id: 3, titulo: "Leer apuntes", completada: true },
+    { id: 1, texto: "Estudiar React", completa: true },
+    { id: 2, texto: "Leer apuntes", completa: false },
   ];
 
   return (
     <ul>
       {tareas.map((tarea) => (
-        <li
-          key={tarea.id}
-          style={{ color: tarea.completada ? "green" : "red" }}
-        >
-          {tarea.titulo}
+        <li key={tarea.id}>
+          {tarea.texto}
         </li>
       ))}
     </ul>
@@ -20,3 +16,5 @@ function ListaTareas() {
 }
 
 export default ListaTareas;
+
+
